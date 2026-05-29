@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>parcial 3</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,11 @@
   <style>
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 90px;
+      scroll-padding-top: 50px;
+    }
+
+    p {
+      text-align: justify;
     }
 
     .navbar-nav .nav-link.active {
@@ -51,288 +55,461 @@
   </style>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbarNav">
-  <div class="text-white min-vh-100 d-flex flex-column custom-background"
-    style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/imagenhero.jpg') no-repeat center center / cover fixed;">
+<body data-bs-spy="scroll" data-bs-target="#navbarNav"
+  style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/hero.png') no-repeat center center / cover fixed;">
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black pt-3">
-      <div class="container-fluid px-4">
-        <a class="navbar-brand text-uppercase fs-5 cinzel-bold" href="#">Villa Quieta</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <!-- barra nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black pt-3">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand text-uppercase fs-5 cinzel-bold" href="#">Villa Quieta</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav gap-3 text-uppercase custom-font lh-xs">
-            <li class="nav-item">
-              <a class="nav-link" href="#prologo">Prólogo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#actoi">Acto I</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#actoii">Acto II</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#actoiii">Acto III</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#creditos">Créditos</a>
-            </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3 text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" href="#prologo">Prólogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#actoi">Acto I</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#actoii">Acto II</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#actoiii">Acto III</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#creditos">Créditos</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <div class="flex-grow-1 d-flex flex-column justify-content-center align-items-center text-center px-3">
-      <section class="min-vh-100 d-flex flex-column justify-content-center align-items-center" id="hero">
+  <!-- contenedor principal -->
+  <main class="text-white min-vh-100 d-flex flex-column justify-content-center align-items-center text-center px-3">
 
-        <p class="text-uppercase tracking-wide fs-6 text-secondary custom-font mb-1">
-          Caldas - Colombia - Siglo XIX
+    <!-- hero -->
+    <section class="min-vh-100 d-flex flex-column justify-content-center align-items-center" id="hero">
+      <p class="text-uppercase fs-6 text-white-50 mb-1">
+        Caldas - Colombia - Siglo XIX
+      </p>
+
+      <div class="w-100 my-2 position-relative" style="max-width: 700px">
+        <h1 class="display-1 text-uppercase cinzel-black py-2">
+          Villa Quieta
+        </h1>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex flex-row gap-4 mb-4">
+              <hr class="w-100 border border-white border-1 my-0">
+              <hr class="w-100 border border-white border-1 my-0">
+            </div>
+          </div>
+        </div>
+
+        <p class="fst-italic text-uppercase fs-5 text-white-50 mt-2 text-center">
+          "Una historia de Lucía Vargas Ospina"
         </p>
 
-        <div class="w-100 my-2 position-relative" style="max-width: 700px">
-          <h1 class="display-1 text-uppercase cinzel-black py-2">
-            Villa Quieta
-          </h1>
+        <div class="mt-5 text-uppercase">
+          <a href="#prologo" class="text-decoration-none text-white-50 d-flex flex-column align-items-center btn-leer">
+            <span class="small">Leer</span>
+            <span class="fs-4">↓</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-          <div class="container">
-            <div class="row">
-              <div class="col-12 d-flex flex-row gap-4 mb-3">
-                <hr class="w-100 border border-white border-1 my-0">
-                <hr class="w-100 border border-white border-1 my-0">
-              </div>
-            </div>
-          </div>
-
-          <p class="fst-italic text-uppercase fs-5 tracking-wide text-secondary custom-font mt-2">
-            "Una historia de Lucía Vargas Ospina"
-          </p>
-
-          <div class="mt-5 text-uppercase custom-font">
-            <a href="#prologo"
-              class="text-decoration-none text-white-50 d-flex flex-column align-items-center btn-leer">
-              <span class="small tracking-wide">Leer</span>
-              <span class="fs-4">↓</span>
-            </a>
+    <!-- prólogo -->
+    <section class="min-vh-100 d-flex flex-column justify-content-center align-items-center py-5"
+      style="max-width: 750px" id="prologo">
+      <div>
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <div class="vr border border-1 bg-white" style="height: 65px;"></div>
+          <div class="d-flex flex-column text-uppercase gap-1">
+            <small class="text-start text-white-50">Antes del primer acto</small>
+            <h2 class="fs-1 mb-0 text-white cinzel-bold">Prólogo</h2>
           </div>
         </div>
-      </section>
 
-      <section class="min-vh-100 w-100 d-flex flex-column justify-content-center align-items-center py-5"
-        style="max-width: 750px" id="prologo">
-        <div>
-          <div class="d-flex align-items-center gap-3 mb-4">
-            <div class="vr border border-1 bg-white" style="height: 65px;"></div>
-            <div class="d-flex flex-column text-uppercase">
-              <small class="text-start text-white-50 tracking-wide custom-font">Antes del primer acto</small>
-              <h2 class="fs-1 mb-0 tracking-widest text-white cinzel-bold">Prólogo</h2>
-            </div>
-          </div>
+        <img src="/img/imagen1.jpeg" alt="Imagen Prólogo" class="w-100 img-fluid object-fit-cover mb-4">
 
-          <img src="/img/imagen1.jpeg" alt="Imagen Prólogo" class="w-100 img-fluid object-fit-cover mb-4">
+        <p class="text-white-50 fs-6 lh-base text-start m-0">
+          <span class="float-start text-white me-2 lh-1 cinzel-black"
+            style="font-size: 4.2rem; margin-top: -0.2rem;">E</span>n Villa Quieta, un pueblo lejano del Caldas antiguo,
+          convivía una sociedad de pocos habitantes que preferían su autonomía sobre la civilización moderna. Sus casas
+          eran de bahareque e iraca, sus oficios eran la minería de carbón y la agricultura, ambas autosuficientes, y
+          sus relaciones eran amistosas, cordiales y serviciales. Cada uno se conocía, rara vez había caras nuevas salvo
+          cuando un neonato lloraba por primera vez.
+        </p>
+      </div>
 
-          <p class="custom-font text-white-50 fs-6 lh-base text-start m-0" style="text-align: justify !important;">
-            <span class="float-start text-white me-2 lh-1 cinzel-black"
-              style="font-size: 4.2rem; margin-top: -0.2rem;">E</span>n Villa Quieta, un pueblo
-            lejano del Caldas antiguo, convivía una sociedad de pocos habitantes que preferían su autonomía sobre la
-            civilización moderna. Sus casas eran de bahareque e iraca, sus oficios eran la minería de carbón y la
-            agricultura, ambas autosuficientes, y sus relaciones eran amistosas, cordiales y serviciales. Cada uno se
-            conocía, rara vez había caras nuevas salvo cuando un neonato lloraba por primera vez.
-          </p>
-        </div>
-
-        <div class="mt-5 w-100">
-          <div class="row align-items-start align-items-stretch g-4 mb-4">
-            <div class="col-md-5">
-              <img src="/img/gifmujer.gif" alt="Lucía" class="w-100 h-100 object-fit-cover">
-            </div>
-
-            <div class="col-md-7 text-start custom-font text-white-50 fs-6 lh-base"
-              style="text-align: justify !important;">
-              <p class="mb-3">
-                Una de las habitantes más jóvenes, Lucía, soñaba con conocer más allá de su pueblo y su gente. Su labor
-                como tendera de la única taberna del lugar era sofocante y desgastante, pues los hombres borrachos que
-                terminaban su día de trabajo tomando chicha como agua, se pasaban por alto el respeto y la cordialidad
-                que los identificaba. Lucía no podía reaccionar ni quejarse, porque a los hombres mayores <span
-                  class="text-white">debía obedecerles y servirles, como buena mujer que era</span>.
-              </p>
-              <p class="m-0">
-                Lucía no tenía amigos, ni pareja, ni hermanos. Sólo una madre soltera cuyo esposo murió en un accidente
-                en las minas de carbón con el que el pueblo se sostenía. Aquella madre, que crió a su hija sumisa y
-                obediente, era el único vínculo que Lucía poseía. Los demás jóvenes estaban ocupados en sus labores y no
-                tenían tiempo de entablar relaciones sino hasta cuando se decidiera emparejar a los hijos de distintas
-                familias, y hasta entonces, Lucía permanece sola y frustrada.
-              </p>
-            </div>
-          </div>
-
-          <div class="row text-start mb-3">
-            <h3 class="fs-4 col-md-5 display-6 text-uppercase cinzel-bold tracking-wide text-white text-center">
+      <div class="mt-5 w-100">
+        <div class="row align-items-stretch g-4 mb-5">
+          <div class="col-md-5 d-flex flex-column" style="height: 450px;">
+            <img src="/img/lucia.gif" alt="GIF de Lucía" class="flex-grow-1 w-100 h-100 object-fit-cover">
+            <h3 class="fs-4 mt-3 mb-0 display-6 text-uppercase cinzel-bold text-white text-center">
               Lucía
             </h3>
           </div>
 
-          <div class="d-grid gap-4" style="grid-template-columns: repeat(2, 1fr);">
-            <div>
-              <img src="/img/labor.png" alt="Su Labor" class="w-100 h-100 object-fit-cover" style="min-height: 200px;">
-            </div>
-            <div>
-              <img src="/img/hombresborrachos.png" alt="Hombres Borrachos" class="w-100 h-100 object-fit-cover"
-                style="min-height: 200px;">
-            </div>
+          <div class="col-md-7 text-white-50 fs-6 lh-base d-flex flex-column justify-content-between">
+            <p class="mb-4">
+              Una de las habitantes más jóvenes, Lucía, soñaba con conocer más allá de su pueblo y su gente. Su labor
+              como tendera de la única taberna del lugar era sofocante y desgastante, pues los hombres borrachos que
+              terminaban su día de trabajo tomando chicha como agua, se pasaban por alto el respeto y la cordialidad que
+              los identificaba. Lucía no podía reaccionar ni quejarse, porque a los hombres mayores <span
+                class="text-white">debía obedecerles y servirles, como buena mujer que era</span>.
+            </p>
+            <p class="m-0">
+              Lucía no tenía amigos, ni pareja, ni hermanos. Sólo una madre soltera cuyo esposo murió en un accidente en
+              las minas de carbón con el que el pueblo se sostenía. Aquella madre, que crió a su hija sumisa y
+              obediente, era el único vínculo que Lucía poseía. Los demás jóvenes estaban ocupados en sus labores y no
+              tenían tiempo de entablar relaciones sino hasta cuando se decidiera emparejar a los hijos de distintas
+              familias, y hasta entonces, Lucía permanece sola y frustrada.
+            </p>
           </div>
         </div>
-      </section>
 
-      <section class="min-vh-100 w-100 d-flex flex-column justify-content-center align-items-center py-5"
-        style="max-width: 750px" id="actoi">
-        <div class="w-100">
-          <div class="d-flex align-items-center gap-3 mb-4">
-            <div class="vr border border-1 bg-white" style="height: 65px;"></div>
-            <div class="d-flex flex-column text-uppercase">
-              <small class="text-start text-white-50 tracking-wide custom-font">Primer Acto</small>
-              <h2 class="fs-1 mb-0 tracking-widest text-white cinzel-bold">Acto 1</h2>
-            </div>
+        <div class="row g-4">
+          <div class="col-6">
+            <img src="/img/labor.png" alt="Imagen Su Labor" class="w-100 object-fit-cover" style="min-height: 200px;">
+          </div>
+          <div class="col-6">
+            <img src="/img/hombresborrachos.png" alt="Hombres Borrachos" class="w-100 object-fit-cover"
+              style="min-height: 200px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- acto i -->
+    <section class="min-vh-100 w-100 d-flex flex-column justify-content-center align-items-center py-5"
+      style="max-width: 750px" id="actoi">
+      <div class="w-100">
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <div class="vr border border-1 bg-white" style="height: 65px;"></div>
+          <div class="d-flex flex-column text-uppercase gap-1">
+            <small class="text-start text-white-50">Primer Acto</small>
+            <h2 class="fs-1 mb-0 text-white cinzel-bold">Acto 1</h2>
+          </div>
+        </div>
+
+        <img src="/img/imagenacto1.png" alt="Imagen Acto 1" class="w-100 img-fluid object-fit-cover mb-4">
+
+        <div class="text-white-50 fs-6 lh-base">
+          <p class="mb-4">
+            Una noche de tormenta, mientras el viejo músico del pueblo tocaba el violín de fondo, la puerta de la
+            taberna se abrió de golpe. Entró un hombre desconocido vestido con ropas camufladas, botas firmes y un
+            pañuelo rojo amarrado al brazo. Cargaba una pesada mochila y un letargo que infundió desconfianza inmediata
+            en los lugareños. El extraño se sentó en la mesa más lejana y pidió un vaso de chicha. Lucía, ansiosa por la
+            novedad, lo sirvió con prisa.
+          </p>
+          <p class="mb-4">
+            Al notar la hostilidad de los borrachos, quienes le gritaron que allí no querían forasteros, el hombre
+            respondió con frialdad:<br>
+            <span class="text-white">—Nadie es de este pueblo, y este pueblo no es de nadie. Si esas minas de carbón no
+              existieran, ustedes tampoco existirían.</span>
+          </p>
+        </div>
+
+        <div class="row align-items-stretch g-4 mt-2 mb-4">
+          <div class="col-md-5">
+            <img src="/img/imagen6.png" alt="Imagen Secundaria Acto 1" class="w-100 h-100 object-fit-cover">
           </div>
 
-          <img src="/img/imagen1.jpg" alt="Imagen Acto 1" class="w-100 img-fluid object-fit-cover mb-4"
-            style="object-position: center;">
-
-          <div class="custom-font text-white-50 fs-6 lh-base text-start text-justify"
-            style="text-align: justify !important;">
+          <div class="col-md-7 text-start text-white-50 fs-6 lh-base d-flex flex-column justify-content-center">
             <p class="mb-4">
-              Una noche de tormenta, mientras el viejo músico del pueblo tocaba el violín de fondo, la puerta de la
-              taberna se abrió de golpe. Entró un hombre desconocido vestido con ropas camufladas, botas firmes y un
-              pañuelo rojo amarrado al brazo. Cargaba una pesada mochila y un letargo que infundió desconfianza
-              inmediata en los lugareños. El extraño se sentó en la mesa más lejana y pidió un vaso de chicha. Lucía,
-              ansiosa por la novedad, lo sirvió con prisa.
+              Antes de que arremetieran contra él, el desconocido sacó de su mochila valiosas piezas de oro indígena. El
+              silencio se apoderó del lugar.<br>
+              <span class="text-white">—Si en siete días hay al menos una persona muerta en el pueblo, todo este oro
+                será para el asesino. El ganador podrá irse a vivir como un rey a la capital —añadió, señalando a Lucía
+                con desprecio—, y acostarse con mujeres mejores que estas.</span>
+            </p>
+            <p class="m-0">
+              Indignada, Lucía confrontó al hombre:<br>
+              <span class="text-white">—¿Andar con usted? ¿Y si lo matamos a usted y nos quedamos con el oro?</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="text-white-50 fs-6 lh-base text-start mt-4 pt-2">
+          <p class="mb-4">
+            El extraño sonrió con ironía y extrajo de su mochila un rifle moderno. Advirtió que patrullaría el pueblo y
+            que solo dispararía en defensa propia. Tras beber su chicha, se marchó bajo la lluvia. El músico, asustado,
+            empacó su instrumentó y abandonó el pueblo esa misma noche. Lucía sugirió a los hombres avisar a sus
+            familias para ignorar la provocación del extraño durante los siete días, pero ellos la callaron con desdén:
+          </p>
+          <p class="m-0 text-center text-white">
+            —Usted no se meta, niña. Usted solo trabaje y sirva.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- acto ii -->
+    <section class="min-vh-100 w-100 d-flex flex-column justify-content-center align-items-center py-5"
+      style="max-width: 750px" id="actoii">
+      <div class="w-100">
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <div class="vr border border-1 bg-white" style="height: 65px;"></div>
+          <div class="d-flex flex-column text-uppercase gap-1">
+            <small class="text-start text-white-50">Segundo Acto</small>
+            <h2 class="fs-1 mb-0 text-white cinzel-bold">Acto 2</h2>
+          </div>
+        </div>
+
+        <img src="/img/nieblavilla.jpeg" alt="Imagen Acto 2" class="w-100 img-fluid object-fit-cover mb-4">
+
+        <div class="text-white-50 fs-6 lh-base">
+          <p class="mb-4">
+            Al día siguiente, Villa Quieta amaneció sumida en una densa neblina y en un silencio sepulcral. Nadie salió
+            a trabajar en las minas ni a vender en las calles; el miedo y la mutua desconfianza habían paralizado a la
+            sociedad. En casa, la madre de Lucía, aterrorizada, sugirió que el hombre era un espíritu, pero Lucía la
+            ignoró.
+          </p>
+          <p class="mb-4 text-white-50">
+            A mediodía, el hombre del pañuelo rojo hizo su ronda con el rifle en mano. Al ver el pueblo desierto, tocó
+            puerta por puerta. Al llegar a la casa de Lucía, ella lo atendió con firmeza, ignorando los ruegos de su
+            madre para que se escondiera.
+          </p>
+        </div>
+
+        <div class="row align-items-stretch g-4 mt-2 mb-4">
+          <div class="col-md-5" style="height: 280px;">
+            <img src="/img/luciasola.png" alt="Imagen Lucía Acto 2" class="w-100 h-100 object-fit-cover">
+          </div>
+
+          <div class="col-md-7 text-start text-white-50 fs-6 lh-base d-flex flex-column justify-content-center">
+            <p class="mb-4">
+              El hombre le preguntó por qué nadie salía, y ella respondió con ironía que la taberna abría a las seis de
+              la tarde y que los demás simplemente tenían miedo de morir. El extraño prometió volver al día siguiente.
             </p>
             <p class="mb-4">
-              Al notar la hostilidad de los borrachos, quienes le gritaron que allí no querían forasteros, el hombre
-              respondió con frialdad:<br>
-              <span class="text-white">—Nadie es de este pueblo, y este pueblo no es de nadie. Si esas minas de carbón
-                no existieran, ustedes tampoco existirían.</span>
+              Los días transcurrieron idénticos. El pueblo seguía escondido, el hombre patrullaba y Lucía atendía la
+              taberna vacía. En la soledad, Lucía se cuestionaba si pasaría el resto de su vida sirviendo a hombres que
+              la menospreciaban, atrapada por los mandatos de su madre, quien justificaba el maltrato bajo la premisa de
+              que el deber femenino era complacer.
             </p>
           </div>
+        </div>
 
-          <div class="row align-items-start align-items-stretch g-4 mt-2 mb-4">
-            <div class="col-md-5">
-              <img src="/img/imagen2.jpg" alt="Imagen Acto 1" class="w-100 h-100 object-fit-cover"
-                style="object-position: center;">
-            </div>
-
-            <div class="col-md-7 text-start custom-font text-white-50 fs-6 lh-base"
-              style="text-align: justify !important;">
-              <p class="mb-3">
-                Antes de que arremetieran contra él, el desconocido sacó de su mochila valiosas piezas de oro indígena.
-                El silencio se apoderó del lugar.<br>
-                <span class="text-white">—Si en siete días hay al menos una persona muerta en el pueblo, todo este oro
-                  será para el asesino. El ganador podrá irse a vivir como un rey a la capital —añadió, señalando a
-                  Lucía con desprecio—, y acostarse con mujeres mejores que estas.</span>
-              </p>
-              <p class="m-0">
-                Indignada, Lucía confrontó al hombre:<br>
-                <span class="text-white">—¿Andar con usted? ¿Y si lo matamos a usted y nos quedamos con el oro?</span>
-              </p>
-            </div>
-          </div>
-
-          <!-- Texto final agregado del archivo image_e78b41.png -->
-          <div class="custom-font text-white-50 fs-6 lh-base text-start mt-4 pt-2"
-            style="text-align: justify !important;">
-            <p class="mb-3">
-              El extraño sonrió con ironía y extrajo de su mochila un rifle moderno. Advirtió que patrullaría el pueblo
-              y que solo dispararía en defensa propia. Tras beber su chicha, se marchó bajo la lluvia. El músico,
-              asustado, empacó su instrumento y abandonó el pueblo esa misma noche. Lucía sugirió a los hombres avisar a
-              sus familias para ignorar la provocación del extraño durante los siete días, pero ellos la callaron con
-              desdén:
+        <div class="row align-items-stretch g-4 mb-4">
+          <div class="col-md-7 text-start text-white-50 fs-6 lh-base d-flex flex-column justify-content-center">
+            <p class="mb-4">
+              Al séptimo día, creyendo que el peligro había pasado, los habitantes salieron en masa a retomar sus
+              labores como si nada hubiera ocurrido. El extraño abordó a Lucía en su puerta y la provocó preguntándole
+              si no quería el oro. Lucía intentó negociar ofreciéndose a sí misma, pero el hombre la rechazó con
+              crudeza:
             </p>
             <p class="m-0 text-center text-white">
-              —Usted no se meta, niña. Usted solo trabaje y sirva.
+              —Ese oro no vale un polvo con usted ni con nadie. Pero sí vale el cadáver de un ser humano. Deje la
+              preguntadera y póngase a trabajar, puta.
             </p>
           </div>
+          <div class="col-md-5 mb-5" style="height: 240px;">
+            <img src="/img/pta.jpeg" alt="Imagen Secundaria Acto 2" class="w-100 h-100 object-fit-cover">
+          </div>
+        </div>
+
+        <div class="text-white-50">
+          <p class="mb-4">
+            Al cerrar la puerta, la madre de Lucía, que había escuchado todo, le propinó una bofetada acusándola de
+            ofrecida.
+          </p>
+          <img src="/img/discusion.png" alt="imagen discusion" class="w-100 img-fluid object-fit-cover mb-4">
+          <p class="mb-4">
+            La tomó del cabello y la arrojó a la cama gritándole que ella no se mandaba sola. Cansada de años de
+            maltrato físico y de la complicidad de su madre ante los abusos que sufría por parte de los clientes en la
+            taberna, Lucía reaccionó.
+          </p>
+        </div>
+
+        <div class="row align-items-stretch g-4 mb-4">
+          <div class="col-md-7 text-start text-white-50 fs-6 lh-base d-flex flex-column justify-content-center">
+            <p class="mb-4">
+              Se levantó y le devolvió la bofetada con rabia. El empujón fue tan violento que la madre cayó de espaldas, 
+              golpeándose la cabeza contra la arista de un ladrillo del fogón. Tras unos segundos de convulsiones, 
+              murió en los brazos de su hija. Espantada, Lucía limpió la sangre y sus manos, ocultando el pañuelo, 
+              que ahora estaba completamente rojo.
+            </p>
+          </div>
+          <div class="col-md-5 mb-5" style="height: 250px;">
+            <img src="/img/muerta1.jpeg" alt="Imagen muerta" class="w-100 h-100 object-fit-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="min-vh-100 w-100 d-flex flex-column justify-content-center align-items-center py-5"
+      style="max-width: 750px" id="actoiii">
+      <div class="w-100">
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <div class="vr border border-1 bg-white" style="height: 65px;"></div>
+          <div class="d-flex flex-column text-uppercase gap-1">
+            <small class="text-start text-white-50">Tercer Acto</small>
+            <h2 class="fs-1 mb-0 text-white cinzel-bold">Acto 3</h2>
+          </div>
+        </div>
+
+        <img src="/img/abucheo.jpeg" alt="Imagen Acto 3" class="w-100 img-fluid object-fit-cover mb-4">
+
+        <div class="text-white-50 fs-6 lh-base">
+          <p class="mb-4">
+           Por la noche, la taberna se llenó de mineros que celebraban su supuesta rectitud y fidelidad
+            por no haber caído en la codicia del oro. Don Toño, uno de los clientes, aprovechó el paso de Lucía para manosearla 
+            descaradamente mientras alababa la sumisión de su difunta madre. Cuando Lucía exigió respeto, los demás hombres la abuchearon, 
+            defendiendo el acoso como una cordialidad varonil.
+          </p>
+        </div>
+
+        <div class="row align-items-stretch g-4 mt-2 mb-4">
+          <div class="col-md-5" style="height: 280px;">
+            <img src="/img/vela.jpeg" alt="Imagen Vela" class="w-100 h-100 object-fit-cover">
+          </div>
+
+          <div class="col-md-7 text-start text-white-50 fs-6 lh-base d-flex flex-column justify-content-center">
+            <p class="mb-4">
+              Llena de un odio definitivo, Lucía tomó una vela, salió de la taberna y bloqueó la única puerta con paja, 
+              ramas e iraca. Encendió el fuego, expandiendo las llamas rápidamente por las paredes de bahareque. 
+              Cuando los hombres adentro notaron el humo, ya era muy tarde; el techo colapsó, atrapándolos en el incendio. 
+              No conforme con esto, Lucía corrió por el pueblo prendiendo fuego a las casas vecinas mientras los habitantes dormían, 
+              incluyendo la suya propia.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-white-50 mt-5">
+          <p class="mb-2 text-center text-white-50">
+            A lo lejos, contemplando el pueblo reducido a cenizas y escuchando los gritos de agonía, 
+            Lucía sintió la presencia del hombre del pañuelo rojo a sus espaldas.
+          </p>
+            <p class="m-0 text-center text-white mb-2">
+              —¿Quieres que te pase el oro ya? —preguntó él.
+            </p>
+          <p class="text-center text-white-50 mb-2">
+            Lucía, con la mirada fría, se volteó:
+          </p>
+            <p class="m-0 text-center text-white mb-4">
+              —¿Usted por qué quería hacer esto?
+            </p>
+          <img src="/img/fuego.jpeg" alt="imagen fuego" class="w-100 img-fluid object-fit-cover mb-4">
+        </div>
+
+        <div class="text-white-50 mt-5">
+          <p class="mb-2 text-center text-white-50">
+            El hombre suspiró y reveló la verdad:
+          </p>
+          <p class="m-0 text-center text-white mb-2">
+            —Formo parte de una guerrilla que combate al gobierno por las tierras. 
+            El gobierno venía a quitarles estas minas de carbón y los iba a masacrar de todos modos. 
+            Mi grupo necesita el dinero de estas minas para comprar armas, ir a la capital y matar al presidente.
+          </p>
+          <p class="text-center text-white-50 mb-2">
+           Lucía, exhausta y sin comprender del todo la política de su salvajismo, preguntó por última vez:
+          </p>
+          <p class="m-0 text-center text-white mb-4">
+            —¿Y ustedes por qué no nos mataron y ya?
+          </p>
+          <img src="/img/indiferencia.png" alt="imagen indiferencia" class="w-100 img-fluid object-fit-cover mb-4">
+          <p class="text-center text-white-50 mb-2">
+            El hombre la miró con indiferencia:
+          </p>
+          <p class="m-0 text-center text-white mb-4">
+            —Porque no nos queríamos ensuciar las manos.
+          </p>
+        </div>
+        
+        
 
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+  </main>
 
-  </div>
+  <!-- créditos -->
+  <footer id="creditos">
+    <div class="container-fluid bg-black text-white-50 py-4">
+      <div class="row">
+        <div class="col-12 d-flex flex-row gap-4 mb-4 align-items-center">
+          <div class="bg-white flex-grow-1" style="height: 2px; opacity: 0.5;"></div>
+          <p class="mb-0 cinzel-black display-4 text-white">FIN</p>
+          <div class="bg-white flex-grow-1" style="height: 2px; opacity: 0.5;"></div>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center text-center">
+        <p class="text-center mb-0 cinzel-black display-6 text-white">CRÉDITOS</p>
+        <div class="col-12 col-md-8 col-lg-6 mx-auto mt-4">
+
+          <div class="row align-items-center mb-4">
+            <div class="col-4 text-start">
+              <p class="mb-0 text-uppercase text-white-50 fs-6">Texto e historia</p>
+            </div>
+            <div class="col-4">
+              <div class="bg-white w-100" style="height: 2px; opacity: 0.5;"></div>
+            </div>
+            <div class="col-4 text-end">
+              <p class="mb-0 text-uppercase text-white fs-6">Elena Quiceno Montoya</p>
+            </div>
+          </div>
+
+          <div class="row align-items-center mb-4">
+            <div class="col-4 text-start">
+              <p class="mb-0 text-uppercase text-white-50 fs-6">Diseño y maquetación</p>
+            </div>
+            <div class="col-4">
+              <div class="bg-white w-100" style="height: 2px; opacity: 0.5;"></div>
+            </div>
+            <div class="col-4 text-end">
+              <p class="mb-0 text-uppercase text-white fs-6">Valentina Rendón Motato</p>
+            </div>
+          </div>
+
+          <div class="row align-items-center mb-4">
+            <div class="col-4 text-start">
+              <p class="mb-0 text-uppercase text-white-50 fs-6">Fotografía</p>
+            </div>
+            <div class="col-4">
+              <div class="bg-white w-100" style="height: 2px; opacity: 0.5;"></div>
+            </div>
+            <div class="col-4 text-end">
+              <p class="mb-0 text-uppercase text-white fs-6">Paula Andrea Botero Alonso</p>
+            </div>
+          </div>
+
+          <div class="row align-items-center mb-4">
+            <div class="col-4 text-start">
+              <p class="mb-0 text-uppercase text-white-50 fs-6">Código</p>
+            </div>
+            <div class="col-4">
+              <div class="bg-white w-100" style="height: 2px; opacity: 0.5;"></div>
+            </div>
+            <div class="col-4 text-end">
+              <p class="mb-0 text-uppercase text-white fs-6">Maria Fernanda González Girón</p>
+            </div>
+          </div>
+
+          <div class="row align-items-center mb-4">
+            <div class="col-4 text-start">
+              <p class="mb-0 text-uppercase text-white-50 fs-6">Materia</p>
+            </div>
+            <div class="col-4">
+              <div class="bg-white w-100" style="height: 2px; opacity: 0.5;"></div>
+            </div>
+            <div class="col-4 text-end">
+              <p class="mb-0 text-uppercase text-white fs-6">Diseño Digital II</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
-<footer id="creditos">
-  <div class="container-fluid bg-black text-white-50 py-4">
-    <div class="row">
-      <div class="col-12 d-flex flex-row gap-4 mb-3 align-items-center">
-        <div class="bg-white flex-grow-1" style="height: 2px; opacity: 0.5;"></div>
-        <p class="mb-0 cinzel-black display-4 text-white">FIN</p>
-        <div class="bg-white flex-grow-1" style="height: 2px; opacity: 0.5;"></div>
-      </div>
-    </div>
-    <div class="row mt-4 justify-content-center text-center">
-      <p class="mb-0 cinzel-black display-6 text-white">CRÉDITOS</p>
-      <div class="col-12 col-md-8 col-lg-6 mx-auto mt-4">
-        <div class="row align-items-center mb-3">
-          <div class="col-4 text-start">
-            <p class="mb-0 custom-font fs-6 text-uppercase text-white-50">Texto e historia</p>
-          </div>
-          <div class="col-5">
-            <div class="bg-white w-100" style="height: 2px; opacity: 0.5;"></div>
-          </div>
-          <div class="col-3 text-end">
-            <p class="mb-0 custom-font fs-6 text-uppercase text-white">Elena Quiceno Montoya</p>
-          </div>
-        </div>
-
-        <div class="row align-items-center mb-3">
-          <div class="col-4 text-start">
-            <p class="mb-0 custom-font fs-6 text-uppercase text-white-50">Diseño y maquetación</p>
-          </div>
-          <div class="col-5">
-            <div class="bg-white w-100" style="height: 2px; opacity: 0.5;"></div>
-          </div>
-          <div class="col-3 text-end">
-            <p class="mb-0 custom-font fs-6 text-uppercase text-white">Valentina Rendón Motato</p>
-          </div>
-        </div>
-
-        <div class="row align-items-center mb-3">
-          <div class="col-4 text-start">
-            <p class="mb-0 custom-font fs-6 text-uppercase text-white-50">Fotografía</p>
-          </div>
-          <div class="col-5">
-            <div class="bg-white w-100" style="height: 2px; opacity: 0.5;"></div>
-          </div>
-          <div class="col-3 text-end">
-            <p class="mb-0 custom-font fs-6 text-uppercase text-white">Paula Andrea Botero Alonso</p>
-          </div>
-        </div>
-
-        <div class="row align-items-center mb-3">
-          <div class="col-4 text-start">
-            <p class="mb-0 custom-font fs-6 text-uppercase text-white-50">Código</p>
-          </div>
-          <div class="col-5">
-            <div class="bg-white w-100" style="height: 2px; opacity: 0.5;"></div>
-          </div>
-          <div class="col-3 text-end">
-            <p class="mb-0 custom-font fs-6 text-uppercase text-white">Maria Fernanda González Girón</p>
-          </div>
-        </div>
-
-        <div class="row align-items-center mb-3">
-          <div class="col-4 text-start">
-            <p class="mb-0 custom-font fs-6 text-uppercase text-white-50">Materia</p>
-          </div>
-          <div class="col-5">
-            <div class="bg-white w-100" style="height: 2px; opacity: 0.5;"></div>
-          </div>
-          <div class="col-3 text-end">
-            <p class="mb-0 custom-font fs-6 text-uppercase text-white">Diseño Digital II</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
 
 </html>
